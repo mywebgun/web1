@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang=ko>
+<head>
+    <meta charset="UTF-8">
+    <title>링크를 버튼으로만들기</title>
+
+    <style>
+        .thumbnail{
+            background-color: gray;
+            margin:10px;
+            width:150px;
+            height:150px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border: 5px solid gray;
+        }
+        .thumbnail.round{
+            border-radius: 20px;
+        }
+        .thumbnail.circle{
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="thumbnail" style="background-image:url('image/puppy-2.jpeg')"></div>
+    <div class="thumbnail round" style="background-image:url('image/puppy-2.jpeg')"></div>
+    <div class="thumbnail circle" style="background-image:url('image/puppy-2.jpeg')"></div>
+    <img src="image/puppy-2.jpeg" alt="">
+</body>
+</html>

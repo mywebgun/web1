@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang=ko>
+<head>
+    <meta charset="UTF-8">
+    <title>트리 만들기</title>
+<link rel="stylesheet" href="tree_fontello/css/fontello.css">
+    <style>
+        .tree{
+            color:gray;
+        }
+        .tree, .tree ul{
+            list-style: none;
+            padding-left: 20px;
+        }
+        .tree *:before{
+            width:20;
+            height:20px;
+            display:inline-block;
+        }
+        .tree label:before{
+            content: '\E805';
+            font-family: fontello;            
+        }
+        .tree a{
+            text-decoration: none;
+            color:gray;
+        }
+        .tree a:before{
+            content: '\F115';
+            font-family: fontello;
+        }
+        .tree input[type="checkbox"]{
+            display: none;
+        }
+        .tree input[type="checkbox"]:checked~ul{
+            display: none;
+        }
+        .tree input[type="checkbox"]:checked+label:before{
+            content:'\E804';
+            font-family: fontello;
+        }
+    </style>
+</head>
+<body>
+   <ul class="tree">
+       <li>
+           <input type="checkbox" id="root">
+            <label for="root"> Root</label>
+            <ul>
+                <li><a href="httP:opentutorisls.org"> node1</a></li>
+                <li><a href="httP:opentutorisls.org"> node2</a></li>
+                <li>
+                    <input type="checkbox" id="node3">
+                    <label for="node3"> node3</label>
+                    <ul>
+                        <li><a href="httP:opentutorisls.org"> node4</a></li>
+                        <li><a href="httP:opentutorisls.org"> node5</a></li>
+                        <li><a href="httP:opentutorisls.org"> node6</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </li>
+   </ul>
+    
+</body>
+</html>
